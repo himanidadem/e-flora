@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --h-primary:2.5rem;
+    --h-secondary:1.8rem;
+   --primary-color: #65A33A; 
+    /* --primary-color: #29741D; */
+   --secondary-color:#84C464; 
+    /* --secondary-color:#4d9441; */
+    --tertiary-color:#1E4006;
+    --heading-font:'Oswald', sans-serif;
+    --para-font:'Ubuntu', sans-serif;
+    /* --smooch-font:'Smooch', cursive; */
+     --smooch-font: 'Uncial Antiqua', cursive;
+}
+html,body{
+	overflow-x:hidden;
+}
+
+.pre_title{
+    font-family: var(--heading-font); 
+    font-weight: 700;
+    font-size: var(--h-primary);
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+  }
+  .title{
+    font-family: var(--heading-font); 
+    font-weight: 400;
+    font-size: var(--h-primary);
+    /* text-transform: uppercase; */
+    color: var(--tertiary-color);
+
+}
+div.title {
+    display: table;
+    white-space: nowrap;
+    transition: all 1s ease-in;
+    }
+    div.title:before, div.title:after {
+      border-top: 3px solid var(--primary-color);
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.7em;
+      width:45%;
+    }
+    div.title:before { right: 1.5%; }
+    div.title:after { left: 1.5%; }
+.content{
+    font-family: var(--para-font);
+    font-size: 1.1rem;
+    word-spacing: 6px;
+}
+.fas{
+    color: var(--tertiary-color);
+}
+.button_s1{
+    font-family: var(--heading-font); 
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+}
+.button_s1:hover{
+    background-color: black;
+    color: white;
+}
+.ml2 .letter{
+	display: inline-block;
+  line-height: 1em;
+}
+@media only screen and (max-width:768px) {
+    .pre_title{
+        font-size:var(--h-secondary);
+    }
+    .title{
+        font-size: var(--h-secondary);
+    }
+    .content{
+        font-size: 1.1rem;
+    }
+    .button_s1{
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:576px) {
+    .content{
+        font-size: 1rem;
+    }
+    .button_s1{
+        font-size: 1rem;
+    }
+}

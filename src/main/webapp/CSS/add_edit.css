@@ -1,0 +1,132 @@
+nav{
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 10px 5px rgba(143, 143, 143, 0.205);
+}
+#sfc_logo img{
+    width: 296px;
+    height: 100px;
+}
+#dg_logo img{
+    width: 243px;
+    height: 100px;
+    /* width: 107px;
+    height: 100px; */
+}
+.heading{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: var(--h-primary);
+    text-transform: uppercase;
+    color: white;
+}
+.sidebar-nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    /* background-color:var(--primary-color); */
+
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #eeeeee;
+    /* background-color:var(--primary-color); */
+    border-radius: 4px;
+}
+.sidebar-nav .offcanvas ul li a span {
+    /* color: var(--secondary-color); */
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+    font-weight:400;
+}
+.sidebar-nav .offcanvas.show ul li a:hover span {
+    padding-left: 10px;
+
+}
+
+.sidebar-nav .offcanvas {
+    width: 300px;
+    border: none;
+    height: 100%;
+}
+
+.offcanvas .offcanvas-body{
+   padding-top: 45%;
+   padding-bottom: 45%;
+   width: 100%;
+
+}
+/* .sidebar-nav .dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+} */
+
+
+
+
+
+/* Form Section Start */
+
+.add_edit_form{
+    -webkit-box-shadow: 5px 5px 10px rgb(143, 143, 143);
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+    width:60%;
+    border-radius: 1rem;
+    margin-top: 30px;
+}
+.add_edit_form form{
+    padding: 1rem 3rem;
+}
+.add_edit_form label{
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-weight:300;
+    /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+    /* color: var(--secondary-color); */
+}
+.add_form .form-control{
+    /* border: 0.5px solid grey; */
+}
+
+
+.image_container{
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+#lightbox.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#lightbox img{
+    max-width: 100%;
+    max-height: 100%;
+    /* padding: 4px; */
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+/* Form Section End */

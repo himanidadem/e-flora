@@ -1,0 +1,220 @@
+#filterbar:focus,#resultset:focus{
+	outline:none;
+}
+/* Parallax effect and Selection Menu Start*/
+.parallax{
+    background:url("../img/floraCover.JPG") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    
+    position: relative;
+
+}
+#parallax_heading{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    top:34%;
+    margin-left: 10%;
+   font-family: var(--heading-font); 
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: 8px 8px 10px #000;
+}
+.selection{
+    margin-top: -50px;
+    -webkit-box-shadow: 5px 5px 15px rgb(143, 143, 143);
+    box-shadow: 0 0 15px rgb(143, 143, 143);
+    position: relative;
+    background-color: white;
+    padding: 3rem 4.5rem;
+    border-radius: 1rem;
+
+}
+.selection li{
+    list-style-type: none;
+    line-height: 2rem;
+}
+.selection .heading_font{
+  font-family: var(--heading-font); 
+    font-weight: 300;
+    font-size: var(--h-secondary);
+    text-transform: uppercase;
+    color:var(--tertiary-color)
+    
+}
+.selection .attribute_font{
+    /* color: gray; */
+    /* font-size: 1.5rem; */
+    text-transform: uppercase;
+    display:inline-block;
+}
+
+.attribute_font label{
+		cursor:pointer;
+}
+
+.selection .attribute_font a{
+	text-decoration:none;
+	color:black;
+}
+
+
+.selection .drop_down{
+    background-color: var(--primary-color);
+    color: black;
+    
+}
+.selection #search_bar{
+    background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.selection .silent_text{
+    color: gray;
+    word-spacing:3px
+}
+/* .selection .fas{
+    font-size: var(--h-secondary); 
+} */
+ input[type="reset"]
+{
+	font-family:var(--heading-font);
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+/*
+input[value="Search"]:hover
+{
+	color:white;
+} */
+.fa-search{
+	font-size: var(--h-secondary);
+}
+.fa-sort{
+	font-size:3rem;
+}
+.fa-filter{
+	font-size: var(--h-secondary);
+}
+
+
+@media only screen and (max-width:992px) {
+    #parallax_heading{
+        font-size: 5rem;
+    }
+    .selection{
+        padding: 3rem 3.1rem;
+    }
+    .selection .heading_font{
+        font-size: 1.5rem;      
+    }
+    /* .selection .fas{
+        font-size: 1.5rem;
+    } */
+    .fa-search{
+	font-size: 1.5rem;
+	}
+	.fa-sort{
+		font-size:2.2rem;
+	}
+	.fa-filter{
+		font-size: 1.5rem;
+	}
+}
+@media only screen and (max-width:768px) {
+    #parallax_heading{
+        font-size: 4rem;
+    }
+    .selection{
+        padding: 3rem 3.5rem;
+    }
+    .selection .heading_font{
+        font-size: 1.5rem;      
+    }
+    input[type="reset"]{
+    font-size:1.1rem;
+    }
+    
+}
+@media only screen and (max-width:576px) {
+    .selection .heading_font{
+        font-size: 1.3rem;      
+    }
+    .selection{
+        padding: 3rem 2rem;
+    }
+    input[type="reset"]{
+    font-size:1rem;
+    }
+    .selection .attribute_font{
+    	font-size:1rem;
+    }
+}
+
+/* Parallax effect and Selection Menu End*/
+
+
+
+
+
+.image_container{
+    /* background-color: var(--primary-color); */
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+.image{
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in;
+    opacity: 0.5;
+}
+
+.image_container:hover .image{
+    transform: scale(1.2);
+    opacity: 0.2;
+}
+.image_container:hover .image_name{
+    margin-bottom: 40px;
+}
+.image_name{
+    position: absolute;
+    margin: auto 20px;
+    margin-bottom: 20px;
+    bottom: 30px;
+    left: 30px;
+    z-index: 20;
+    color: white;
+    font-weight: 200;
+    font-family: var(--heading-font); 
+    font-size: var(--h-secondary);
+    transition: all 0.3s ease-in;
+    text-shadow: 5px 10px 10px #000;
+}
+
+.noresult_alert{
+	font-family: var(--heading-font); 
+	color:var(--tertiary-color);
+	font-size:var(--h-primary);
+}
+
+@media (max-width: 767px) {
+	.image{
+		height:400px;
+	}
+	.image_name{
+		font-size:1.5rem;
+	}
+}
+	
+
+	

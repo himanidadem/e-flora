@@ -1,0 +1,241 @@
+/* Parallax effect and Tree Info Section Start*/
+#resultset:focus{
+	outline:none;
+}
+.parallax{
+    background:url("../img/floraCover.JPG") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    
+    position: relative;
+
+}
+#parallax_heading{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    top:33%;
+    margin-left: 10%;
+    font-family: var(--heading-font); 
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: 8px 8px 10px #000;
+}
+.heading_section{
+    margin-top: -50px;
+    -webkit-box-shadow: 5px 5px 15px rgb(143, 143, 143);
+    box-shadow: 0 0 15px rgb(143, 143, 143);
+    position: relative;
+    background-color: white;
+    padding: 3rem 1rem;
+    z-index: 2;
+    border-radius: 1rem;
+}
+.scific_name{
+    font-family: var(--heading-font); 
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-weight: 600;
+    font-size: var(--h-primary);
+    font-style: italic;
+    word-spacing: 0.5rem;
+}
+.hindi_name{
+   font-family: var(--heading-font); 
+    font-weight: 700;
+    font-size: var(--h-secondary);
+    color: var(--tertiary-color); 
+}
+.telugu_name{
+    font-family: 'Suranna', serif;
+    font-weight: 700;
+    font-size: var(--h-secondary);
+    color: var(--tertiary-color); 
+}
+.fields_section{
+    position: relative;
+    -webkit-box-shadow: 5px 5px 10px rgb(143, 143, 143);
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+    background-color:var(--secondary-color);
+    margin-top: -10px;
+    z-index: 1;
+    width:60%;
+    border-radius: 1rem;
+}
+/* .fields_section ul{
+    list-style-type: none;
+    line-height: 3.5rem;
+} */
+.fields_section li{
+    list-style-type: none;
+    /* line-height: 3.5rem; */
+    padding:10px 0px;
+}
+/* .fields_section span{
+    display: inline;
+    line-height: 0.5rem;
+} */
+.fields_section .field_name{
+    font-family: var(--heading-font); 
+    font-weight: 400;
+    /* font-weight: bold; */
+    /* letter-spacing: 1px; */
+    font-size: 1.4rem;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+     color: var(--tertiary-color); 
+}
+.fields_section .field_value{
+    /* color: gray; */
+    color: black;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:1200px) {
+    .fields_section{
+        width:70%;
+    }   
+}
+@media only screen and (max-width:992px) {
+    .fields_section{
+        width:75%;
+    }
+}
+@media only screen and (max-width:768px) {
+    #parallax_heading{
+        font-size: 4rem;
+    }
+    .heading_section{
+        padding: 2rem 1rem;
+    }
+    .scific_name{
+        font-size: 2rem;
+    }
+    .hindi_name{
+        font-size: 1.4rem;
+    }
+    .telugu_name{
+        font-size: 1.4rem;
+    }
+    .fields_section{
+        width:80%;
+    }
+    .fields_section li{
+        /* line-height: 3rem; */
+        padding:10px 0px;
+    }
+    .fields_section .field_name{
+        font-size: 1.4rem;
+    }
+    .fields_section .field_value{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (max-width:576px) {
+    .heading_section{
+        padding: 2rem 1rem;
+    }
+    .scific_name{
+        font-size: var(--h-secondary)
+    }
+    .hindi_name{
+        font-size: 1.2rem;
+    }
+    .telugu_name{
+        font-size: 1.2rem;
+    }
+    .fields_section{
+        width:90%;
+    }
+    .fields_section li{
+        /* line-height: 3rem; */
+        padding:10px 0px;
+    }
+    .fields_section .field_name{
+        font-size: 1.2rem;
+    }
+    .fields_section .field_value{
+        font-size: 1rem;
+    }
+    
+}
+/* Parallax effect and Tree Info Section Start*/
+
+
+
+
+
+/* Photo Gallery Start */
+#photo_gallery_heading{
+    font-family: var(--heading-font); 
+    font-weight: 700;
+    font-size: var(--h-primary);
+    text-transform: uppercase;
+}
+.image_container{
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+#lightbox.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#lightbox img{
+    max-width: 100%;
+    max-height: 100%;
+    /* padding: 4px; */
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width:992px) {
+    .image{
+        width: 100%;
+        height:400px;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    #photo_gallery_heading{
+        font-size: 2rem;
+    }
+    .image{
+        width: 100%;
+        height:300px;
+    }
+}
+@media only screen and (max-width:576px) {
+    #photo_gallery_heading{
+        font-size: var(--h-secondary);
+    }
+    .image{
+        width: 100%;
+        height:250px;
+    }
+}
+/* Photo Gallery End */
+

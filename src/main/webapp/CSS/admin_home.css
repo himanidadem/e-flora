@@ -1,0 +1,161 @@
+nav{
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 10px 5px rgba(143, 143, 143, 0.205);
+}
+.sidebar-nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    /* background-color:var(--primary-color); */
+
+}
+#sfc_logo img{
+    width: 296px;
+    height: 100px;
+}
+#dg_logo img{
+    width: 243px;
+    height: 100px;
+    /* width: 107px;
+    height: 100px; */
+}
+.heading{
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 700;
+    font-size: var(--h-primary);
+    text-transform: uppercase;
+    color: white;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #eeeeee;
+    /* background-color:var(--primary-color); */
+    border-radius: 4px;
+}
+.sidebar-nav .offcanvas ul li a span {
+    /* color: var(--secondary-color); */
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1.6rem;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+}
+.sidebar-nav .offcanvas.show ul li a:hover span {
+    padding-left: 10px;
+
+}
+
+.sidebar-nav .offcanvas {
+    width: 300px;
+    border: none;
+    height: 100%;
+}
+
+.offcanvas .offcanvas-body{
+   padding-top: 45%;
+   padding-bottom: 45%;
+   width: 100%;
+
+}
+/* .sidebar-nav .dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+} */
+
+
+
+
+
+/* Add New Record Start */
+#add_record{
+	padding:10px 200px
+}
+
+
+/* Add New Record End */
+
+
+
+
+
+
+
+/* Table Section Start*/
+.table{
+	border-radius:1rem;
+	/* width:500px;
+	border-collapse: separate !important;
+	border-spacing: 0; */
+}
+td,th{
+	 white-space: nowrap;
+	 /* overflow: hidden; */
+	 
+}
+.table-responsive{
+	max-height:500px;
+}
+
+
+/* First two columns */
+th{
+	top:0;
+	position:sticky;
+	z-index:2;	
+}
+th:nth-child(-n+2)
+{
+	z-index:3;
+}
+
+
+th:nth-child(1),td:nth-child(1) {
+    position: sticky;
+    left: 0;
+}
+th:nth-child(2),td:nth-child(2)
+{
+	position:sticky;
+	left:81px;
+}
+td:nth-child(-n+2)
+{
+	 background:rgb(230,230,230); 
+	
+}
+
+
+
+
+th:nth-last-child(-n+4)
+{
+	z-index:3;
+}
+th:nth-last-child(1),td:nth-last-child(1) {
+    position: sticky;
+    right: 0;
+}
+th:nth-last-child(2),td:nth-last-child(2)
+{
+	position:sticky;
+	right:65px;
+}
+th:nth-last-child(3),td:nth-last-child(3)
+{
+	position:sticky;
+	right:132px;
+}
+th:nth-last-child(4),td:nth-last-child(4)
+{
+	position:sticky;
+	right:204px;
+}
+td:nth-last-child(-n+4)
+{
+	 background:rgb(230,230,230); 
+	
+}
+
+
+/* Table Section End */

@@ -1,0 +1,335 @@
+ @media (max-width: 991.98px) {
+  .offcanvas-collapse {
+  z-index: 1000;
+  position: fixed;
+  margin-top:77px;
+  top: 0px; /* Height of navbar */
+  bottom: 0;
+  left: 100%;
+  width: 80%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color:var(--primary-color);
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index:-1
+  }
+  .offcanvas-collapse.open {
+  visibility: visible;
+  transform: translateX(-100%);
+  position: fixed;
+  
+  }
+  
+  }
+
+
+
+  .scrolled-down{
+      transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+      transform:translateY(95); transition: all 0.3s ease-in-out;
+    }
+  .navbar{
+      background-color:var(--primary-color);
+      z-index:5000
+  }
+
+  
+  #dg_logo img{
+      width: 271px;
+      height: 130px;
+      /* width: 107px;
+      height: 100px; */
+  }
+  #sfc_logo img{
+      width: 296px;
+      height: 100px;
+  }
+  
+  .dg_heading
+  {
+      font-family: var(--smooch-font);
+      font-size: 4rem;
+      margin: auto;
+      color:white;
+      font-weight:700;
+      letter-spacing:2px;
+      
+      /* width: 400px; */
+  }
+  .tag_line{
+  	font-weight:400;
+  	font-style:italic;
+  }
+  
+  #top_nav .nav-link{
+      font-size: 1.3rem;
+      text-align: center;
+      font-family: var(--heading-font);
+      font-weight: 400; 
+      color: var(--tertiary-color); 
+      padding:1rem 0px;
+      /* font-weight: bold; */
+  }
+  .navbar-collapse .active{
+  	border-top-right-radius:2rem;
+         border-bottom-left-radius:2rem;
+		/* border:3px solid var(--primary-color); */
+		background-color:var(--secondary-color);
+  }
+  #list_logo{
+      display: none;
+  }
+ 
+  
+  @media only screen and (max-width:1200px) {
+      #dg_logo img{
+          width:229px;
+          height:110px;
+      }
+      #sfc_logo img{
+          width: 237px;
+          height: 80px;
+      }    
+      .dg_heading
+      {
+          font-size: 4rem;
+      }  
+  }
+  @media only screen and (max-width:992px) {
+      #dg_logo img{
+          width:187px;
+          height:90px;
+      }
+      #sfc_logo img{
+          width: 200px;
+          height: 68px;
+      }
+      .dg_heading
+      {
+          font-size: 3rem;
+      }
+  }
+  @media only screen and (max-width:768px) {
+      .navbar-brand{
+          margin: auto;
+      }
+       /* #dg_logo img{
+          display: none;
+      }  */
+      #list_logo{
+          display: block;
+      }
+      #list_logo img{
+          width: 187px;
+          height: 90px;
+      }
+      #top_nav{
+      	
+      }
+      .navbar{
+     /*  margin-bottom:200px; */
+     top:0;
+      position:fixed;
+      width:100%;
+      -webkit-box-shadow: 5px 5px 15px rgb(143, 143, 143);
+    box-shadow: 0 0 15px rgb(143, 143, 143);
+    
+      }
+      body{
+      	margin-top:77px;
+      }
+  }
+  @media only screen and (max-width:576px) {
+      #dg_logo img{
+          width:146px;
+          height:60px;
+      }
+      .dg_heading
+      {
+          font-size: 2.5rem;
+      } 
+  }
+
+
+
+
+
+
+  
+  #navbar_bottom{ 
+        background-color: var(--secondary-color);
+        
+        /* box-shadow: 10px 10px 10px  rgba(143, 143, 143, 0.205); */
+      
+      	 box-shadow: 10px 10px 10px  rgba(143, 143, 143, 0.205); 
+      	
+        /* top:130px; */
+        /* position: fixed; */
+        }
+        
+        .nav-underline .nav-link {
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        /* color: var(--secondary-color); */
+        color:var(--tertiary-color);
+        display: inline-block;
+        position: relative;
+        font-size: 1.4rem;
+        font-family:var(--heading-font);
+        font-weight: 400;
+       
+        }
+        
+        /* .nav-underline .nav-link:hover {
+        color: #b4c7e7;
+        text-decoration: underline;
+        } */
+        
+        .nav-underline .active {
+        font-weight: 400;
+        /* color: var(--secondary-color); */
+        border-top-right-radius:2rem;
+         border-bottom-left-radius:2rem;
+		/* border:3px solid var(--primary-color); */
+		background-color:var(--primary-color);
+        
+        }
+        #navbar_bottom .nav-link:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            /* display: block; */
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            background: var(--tertiary-color);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          #navbar_bottom .nav-link:hover:after { 
+            width: 100%; 
+            left: 0; 
+            color: var(--tertiary-color);
+          }
+          
+        .nav .dropdown-item{
+           font-family: 'Oswald', sans-serif;
+        }
+
+
+
+	#navbar_bottom .dropdown-menu-end{ right:0; left: auto;  }
+	#navbar_bottom .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0; -webkit-box-shadow: 5px 5px 15px rgb(143, 143, 143);
+    box-shadow: 0 0 15px rgb(143, 143, 143); }
+	
+	#navbar_bottom .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	#navbar_bottom .dropdown-menu.fade-up{ top:180%;  }
+	#navbar_bottom .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+/* Navigation Bar End */
+
+/* Footer Section Start*/
+
+
+#footer{
+    background: linear-gradient(-45deg, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color));
+}
+#footer svg{
+    /* box-shadow: 10px -10px 5px 12px grey; */
+    /* -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7)); */
+    filter: drop-shadow( -10px -10px 5px rgba(0, 0, 0, 0.7));
+}
+#footer_dg_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    margin: 10px 0px;
+}
+#footer_dg_logo img{
+    width: 271px;
+    height: 130px;
+}
+#footer_sfc_logo img{
+    width:296px;
+    height: 100px;
+}
+#footer_list{
+    list-style-type: none;
+}
+
+#footer iframe{
+    width: 467px;
+    height: 230px;
+}
+.footer_title{
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+     color: var(--tertiary-color); 
+    text-transform: uppercase;
+    display:inline-block;
+    border-bottom: 3px solid var(--secondary-color);
+}
+#footer_end{
+	/* background-color:var(--secondary-color); */
+}
+#copy_right{
+     color: var(--tertiary-color); 
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1200px) {
+    #footer iframe{
+        width: 360px;
+        height: 220px;
+    }
+}
+@media only screen and (max-width:992px) {
+    #footer_dg_logo img{
+        width:271px;
+        height:130px;
+    }
+    #footer_sfc_logo img{
+        width: 178px;
+        height: 60px;
+    }
+    #footer iframe{
+        width: 320px;
+        height: 220px;
+    }
+}
+@media only screen and (max-width:768px) {
+    #footer{
+    	padding-bottom:1rem;
+    }
+    #footer_dg_logo img{
+        width:208px;
+        height:100px;
+    }
+    #footer_sfc_logo img{
+        width: 178px;
+        height: 60px;
+    }
+    #footer iframe{
+        width: 300px;
+        height: 220px;
+    }
+    #div_sec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div_sec span{
+        font-size: var(--p-secondary);
+    }
+    #footer_end{
+        display: none;
+    }
+    .footer_title{
+        font-size: 1.1rem;
+    }
+}
+/* Footer section End */
