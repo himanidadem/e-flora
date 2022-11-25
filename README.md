@@ -3,6 +3,8 @@ Project folder of e-flora
 
 ABSTRACT:
 e-Flora as the name suggests is a systematic way of digitizing the flora in an area so that the details of the species are easily accessible by a common man. It includes two major parts, the first one being the creation of the website and the second one, generating the QR codes for each species. The e-Flora website includes many functionalities such as sorting of species based ontheir category, root type, location, and useful part through which species details are easily available. One can also search the plant species in the search bar according to the alphabetical order which makes it much easier to find them based on their names. When you select and click on a particular plant species you will be redirected to a page which includes details and the photo gallery of the species. Visitors can toggle to the home page and view an entire catalogue of flora. The website is user- friendly and easy to maintain. When we generate unique QR CODES to each species, visitors can learn more about the species by scanning the QR code using QR code scanner in the mobile and it will redirect the user to the webpage containing all the information about the species. All species details are well documented and therefore the details will be presented in a neat format. The QR codes will be placed along with the plant labels across different locations in the campus.
+
+Click the below link to see working of the application
 https://drive.google.com/file/d/1D0CquW0RQCZzqQIgc7o8V7wevL9Qkios/view?usp=sharing
 
 OBJECTIVE:
