@@ -14,7 +14,7 @@ To simplify the manual work of track of the records of plants and to provideup t
 The purpose of digitalization is to enable automation, increase data quality, and collect and structure all that data so we can apply advanced technology, such as better and smarter software. The same is applied for the e-Flora.
 
 ### SCOPE AND APPLICABILITY: <br>
-This project can be applied in the field of Botany which deals with plant sciences to keep a track of the species data in a particular area.
+E-Flora is a project that aims to help with the management and documentation of the flora found on a specific campus. It allows users to input and store information about different plant species found on the campus, including details such as their common and scientific names, uses, campus location, and visual pictures and any notable characteristics. This information can then be easily searched and accessed by users, making it a useful tool for researchers, students, and anyone interested in the campus's botanical diversity.
 
 ### TECHNOLOGIES USED: <br>
 Java Dabase Connectivity(JDBC), Servlets, Java Server Pages(JSP), HTML5, CSS3, JavaScript, Bootstrap5, SQL
